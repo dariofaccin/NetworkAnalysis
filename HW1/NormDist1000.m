@@ -26,6 +26,7 @@ end
 CI = CI(order,:);
 m = m(order);
 
+% Split CI into lower and upper bound
 CI_lower = CI(:,1);
 CI_upper = CI(:,2);
 

@@ -14,3 +14,4 @@ s = sqrt(sum(X1) / (length(X)-1));
 % percentile = unifinv(0.95,0,1);
 percentile = 1.96;
 CI = [m - percentile*s / sqrt(length(X)), m + percentile*s / sqrt(length(X))];
+%questa è una prova

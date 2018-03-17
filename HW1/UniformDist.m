@@ -11,7 +11,6 @@ X1 = (X - m).^2;
 s = sqrt(sum(X1) / (length(X)-1));
 
 % Confidence interval at 95%
-% percentile = unifinv(0.95,0,1);
-percentile = 1.96;
+alpha = 1 - 0.95;
+percentile = unifinv(1-alpha/2,0,1);
 CI = [m - percentile*s / sqrt(length(X)), m + percentile*s / sqrt(length(X))];
-%questa è una prova

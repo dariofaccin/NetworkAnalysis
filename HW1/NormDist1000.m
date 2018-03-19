@@ -19,7 +19,6 @@ for a = 1:1000
     if ( m(a) < CI(a,1) || m(a) > CI(a,2) )
         times = times + 1;
     end
-%     disp(a)
 end
 
 [temp, order] = sort(CI(:,1));
@@ -41,3 +40,5 @@ xlabel('Sample'); xlim([1 50]);
 ylabel('Value');
 legend('Upper CI', 'Lower CI', 'Mean');
 hold off;
+
+fprintf("Times the mean falls out of the confidence interval is: %d\n", times);

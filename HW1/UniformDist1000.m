@@ -8,7 +8,6 @@ s = zeros(1000,1);
 times = 0;
 pvalue = 0.05;
 percentile = unifinv(1-pvalue/2, 0,1);
-% percentile = unifinv((1+0.95)/2, 0,1);
 
 for a = 1:1000
     X = rand([1 48]);

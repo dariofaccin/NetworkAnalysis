@@ -14,3 +14,7 @@ s = sqrt(sum(X1) / (length(X)-1));
 alpha = 1 - 0.95;
 percentile = unifinv(1-alpha/2,0,1);
 CI = [m - percentile*s / sqrt(length(X)), m + percentile*s / sqrt(length(X))];
+
+figure('Name', 'Confidence intervals')
+plot(CI, 'Linewidth', 1.5, 'Marker', 'x');
+print -deps CIUniformDist;

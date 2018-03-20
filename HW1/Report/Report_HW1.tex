@@ -6,6 +6,8 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{mathrsfs}
+\usepackage{graphics}
+\usepackage{caption}
 \usepackage{array}
 \usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 
@@ -17,6 +19,54 @@
 \maketitle
 
 \pagenumbering{gobble}
+
+\section*{EXERCISE 1}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{fig21}
+	\caption*{Figura 2.1}
+\end{figure} 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{fig22}
+	\caption*{Figura 2.2}
+\end{figure} 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{fig27}
+	\caption*{Figura 2.7}
+\end{figure} 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics{fig210}
+	\caption*{Figura 2.10}
+\end{figure} 
+\clearpage
+
+\section*{EXERCISE 3}
+\begin{itemize}
+	\item Confidence interval for 48 i.i.d. U(0,1) random values
+	\begin{figure}[h!]
+		\centering
+		\includegraphics{CIUniformDist}
+		\caption*{CI for Uniform Distribuition}
+	\end{figure} 
+
+	\item repetition o the experiment for 1000 times 
+	\begin{figure}[h!]
+		\centering
+		\includegraphics{CIUniformDistFor1000Times}
+		\caption*{CI for 1000 times}
+	\end{figure} 	
+\end{itemize}
+
+\clearpage
+
+\section*{EXERCISE 3}
 \setlength\parindent{0pt}
 Prove that, for $n$ $U(0,1)$ random variables, we have $ \mathbb{E} \left( U_{(j)} \right) = \frac{j}{n+1}$.\\
 \bigbreak
@@ -42,4 +92,6 @@ E(U_{(j)}) &=\frac{n!}{(j-1)!(n-j)!}\int_0^1 x^{j}[1-x]^{n-j}dx \\[5pt]
 &= \frac{ \Gamma(n+1)}{\Gamma(j) \Gamma(n-j+1)} \cdot \frac{\Gamma(j+1) \Gamma(n-j+1) }{ \Gamma(n+2)} \\[5pt]
 &= \frac{\Gamma(j+1) \Gamma(n+1)}{\Gamma(j) \Gamma(n+2)} = \frac{j}{n+1}.
 \end{align*}
+
+\section{EXERCISE 4}
 \end{document}

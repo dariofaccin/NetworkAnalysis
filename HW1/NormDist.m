@@ -14,3 +14,4 @@ s = sqrt(sum(X1) / (length(X)-1));
 alpha = 1 - 0.95;
 percentile = norminv(1-alpha/2,0,1);
 CI = [m - percentile*s / sqrt(length(X)), m + percentile*s / sqrt(length(X))];
+print -deps CINormDist;

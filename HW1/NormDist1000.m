@@ -39,6 +39,7 @@ title('Confidence intervals for 1000 Gaussian i.i.d. r.v.s')
 xlabel('Sample'); xlim([1 50]);
 ylabel('Value');
 legend('Upper CI', 'Lower CI', 'Mean');
+print -deps CINormDistFor1000Times;
 hold off;
 
 fprintf("Times the mean falls out of the confidence interval is: %d\n", times);

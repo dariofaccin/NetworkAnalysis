@@ -38,4 +38,5 @@ title('Confidence intervals for 1000 Uniform i.i.d. r.v.s')
 xlabel('Sample'); xlim([1 50]);
 ylabel('Value');
 legend('Upper CI', 'Lower CI', 'Mean');
+print -deps CIUniformDistFor1000Times;
 hold off;
